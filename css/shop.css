@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean);
+
+.navbar-default {/* 목차 색상 */
+	background-color: black;
+}
+.navbar-default .navbar-nav > a,
+.navbar-default .navbar-nav .dropdown > a{/* 제목 색상 */
+	color: white;
+}
+.navbar-default .navbar-nav > a:hover,
+.navbar-default .navbar-nav > a:focus,
+.navbar-default .navbar-nav .dropdown > a:hover,
+.navbar-default .navbar-nav .dropdown > a:focus{/* 리스트 포커스 시 색상 */
+	color: yellow;
+	text-decoration: none;
+}
+.navbar-default .navbar-brand .open > a,
+.navbar-default .navbar-brand .open > a:hover,
+.navbar-default .navbar-brand .open > a:focus{/* 드롭다운 선택 시 리스트 색깔*/
+	color:yellow;
+	background-color: black;
+}
+

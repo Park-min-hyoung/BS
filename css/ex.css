@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+*.{
+	font-family: 'Nanum Gothic';
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+a:hover {
+	color: #bbbbbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+/* 네비게이션 영역 */
+.navbar-default{
+	background-color: black;
+	border-color: black;
+}
+.navbar-default .navbar-brand{
+	color:white;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus{
+	background-color: transparent;
+	color:yellow;
+}
+.navbar-default .navbar-nav .active >a,
+.navbar-default .navbar-nav .active >a:hover,
+.navbar-default .navbar-nav .active >a:focus{
+	color: white;
+	background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{
+	color:#bbbbbb;
+}
+.navbar-default .navbar-nav .open > a,
+.navbar-default .navbar-nav .open > a:focus,
+.navbar-default .navbar-nav .open > a:hover{
+	background-color: white;
+	color: black;
+	text-decoration: none;
+}
+.navbar-default .navbar-nav > li > a{
+	color: white;
+}
+@media (max-width: 767px){
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a{
+		color:white;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus{
+		color:#bbbbbb;
+	}
+}
