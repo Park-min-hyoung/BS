@@ -2,22 +2,41 @@
 
 .navbar-default {/* 목차 색상 */
 	background-color: black;
+	margin-bottom: 0px; border:0px;
 }
-.navbar-default .navbar-nav > a,
+.navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav .dropdown > a{/* 제목 색상 */
 	color: white;
+	padding-right : 100px; padding-left: 100px;
+
 }
-.navbar-default .navbar-nav > a:hover,
-.navbar-default .navbar-nav > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav .dropdown > a:hover,
 .navbar-default .navbar-nav .dropdown > a:focus{/* 리스트 포커스 시 색상 */
 	color: yellow;
 	text-decoration: none;
 }
-.navbar-default .navbar-brand .open > a,
-.navbar-default .navbar-brand .open > a:hover,
-.navbar-default .navbar-brand .open > a:focus{/* 드롭다운 선택 시 리스트 색깔*/
+.navbar-default .navbar-nav .open > a,
+.navbar-default .navbar-nav .open > a:hover,
+.navbar-default .navbar-nav .open > a:focus{/* 드롭다운 선택 시 리스트 색깔*/
 	color:yellow;
 	background-color: black;
+}
+.container{/* 제목 네비게이션 사이 거리*/
+	padding-bottom: 20px; 
+}
+.container .row > h1{/*제목 스타일*/
+	font-family:'Black Han Sans'; 
+	letter-spacing:20px; 
+	margin-bottom:-40px; padding-top: 10px;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  padding-top: 10px; padding-bottom: 10px;
+}
+.navbar .navbar-collapse {
+  text-align: center;
 }
 
