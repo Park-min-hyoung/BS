@@ -2,10 +2,10 @@
 
 .navbar-default {/* 목차 색상 */
 	background-color: black;
-	margin-bottom: 0px; border:0px;
+	border:0px; margin: 0px;
 }
 .navbar-default .navbar-nav > li > a,
-.navbar-default .navbar-nav .dropdown > a{/* 제목 색상 */
+.navbar-default .navbar-nav .dropdown > a{ /* 제목 색상 */
 	color: white;
 	padding-right : 100px; padding-left: 100px;
 
@@ -13,30 +13,33 @@
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav .dropdown > a:hover,
-.navbar-default .navbar-nav .dropdown > a:focus{/* 리스트 포커스 시 색상 */
+.navbar-default .navbar-nav .dropdown > a:focus{ /* 리스트 포커스 시 색상 */
 	color: yellow;
 	text-decoration: none;
 }
 .navbar-default .navbar-nav .open > a,
 .navbar-default .navbar-nav .open > a:hover,
-.navbar-default .navbar-nav .open > a:focus{/* 드롭다운 선택 시 리스트 색깔*/
+.navbar-default .navbar-nav .open > a:focus{ /* 드롭다운 선택 시 리스트 색깔*/
 	color:yellow;
 	background-color: black;
 }
-.container{/* 제목 네비게이션 사이 거리*/
+.container{ /* 제목 네비게이션 사이 거리*/
 	padding-bottom: 20px; 
 }
-.container .row > h1{/*제목 스타일*/
+.container .row > h1{ /*제목 스타일*/
 	font-family:'Black Han Sans'; 
 	letter-spacing:20px; 
 	margin-bottom:-40px; padding-top: 10px;
 }
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
+.navbar .navbar-nav {  /* 목차 */
+  display: inline-block; 
+  float: none; /* 이 두줄이 내가 원하는 모양(block)을 일렬(inline)로 정렬 해서 그저 block 속성 유지(float:none)를 위한 것 인가???*/
   padding-top: 10px; padding-bottom: 10px;
 }
-.navbar .navbar-collapse {
+.navbar .navbar-collapse { /* 목차 요소 가운데 정렬(inline이 되니까) */
   text-align: center;
+}
+.container-fluid{ /* 좌우 여백 제거 */
+	padding: 0px;
 }
 
