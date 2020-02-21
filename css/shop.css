@@ -26,10 +26,9 @@
 .container{ /* 제목 네비게이션 사이 거리*/
 	padding-bottom: 20px; 
 }
-.container .row > h1{ /*제목 스타일*/
+.container .row > div > h1{ /*제목 스타일*/
 	font-family:'Black Han Sans'; 
-	letter-spacing:20px; 
-	margin-bottom:-40px; padding-top: 10px;
+	letter-spacing:20px; padding-top: 10px;
 }
 .navbar .navbar-nav {  /* 목차 */
   display: inline-block; 
@@ -40,6 +39,24 @@
   text-align: center;
 }
 .container-fluid{ /* 좌우 여백 제거 */
-	padding: 0px;
+	padding:0px;
+}
+.container .row > div > a{ /* a태그 포커스시 밑줄 나타나는대 제거 */
+	text-decoration: none;
+}
+.container .row > div > a > img{ /* BEST 이미지 크기*/
+	width: 250px;
+	height: 200px;
+}
+#top-link-block.affix-top{ /* 없어지기 바로 직전에 예쁘게 없어지려고 그러나???*/
+	position: absolute;
+	bottom: -82px;
+	right: 15px;
+}
+
+#top-link-block.affix{ /* 평소 위치 */
+	position: fixed;
+	bottom: 50px;
+	right: 100px;
 }
 
